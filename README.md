@@ -5,5 +5,5 @@ https://github.com/rafay826/djudo
 # Installation
 Refer to the Djudo repo's readme on how to set-up the CMS
 
-# Client Structure
+# Theme Structure
 ...coming soon
