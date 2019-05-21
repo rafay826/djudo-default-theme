@@ -1,0 +1,30 @@
+@import 'variables';
+
+@mixin pFontStack($size, $weight) {
+  font-family: $roboto;
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@keyframes cardHover {
+  from {
+    color: $grey;
+  }
+  to {
+    box-shadow: -1px 4px 8px $night-black;
+    // background: $monza-red;
+    color: $black;
+  }
+}
+
+@keyframes dance {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

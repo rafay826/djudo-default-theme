@@ -1,0 +1,15 @@
+import React from 'react';
+import FacebookProvider, { Comments } from 'react-facebook';
+import { Card } from 'material-ui/Card';
+
+const DjudoComments = (props) => {
+  return (
+    <Card>
+      <FacebookProvider appId='684364055102311'>
+        <Comments href={`http://rafay.io/posts/${props.id}`} />
+      </FacebookProvider>
+    </Card>
+  )
+};
+
+export default DjudoComments

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i|Roboto:100,200,300,400,700");
+.flex, .flex-column, .flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+.flex-7 {
+  flex: 7;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+.flex-9 {
+  flex: 9;
+}
+
+.flex-10 {
+  flex: 10;
+}
+
+.flex-11 {
+  flex: 11;
+}
+
+.flex-12 {
+  flex: 12;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  font-family: Open Sans, sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  box-shadow: 1px 1px 4px #888;
+  margin-bottom: 5%;
+}
+header .menu-container {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header .menu-container a {
+  color: #6C7A89;
+}
+header .menu-container .menu-active {
+  border-bottom: 3px solid #65C6BB;
+}
+header .menu, header .close {
+  cursor: pointer;
+  position: relative;
+  top: 25px;
+  transform: scale(1.5);
+}
+header .close {
+  left: 80%;
+}
+header .menu {
+  left: 25px;
+}
+header .header-container {
+  height: 100%;
+  position: relative;
+}
+header .header-container .header-text {
+  text-align: center;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .header-container .header-text .title {
+  cursor: pointer;
+  color: #FFFFFF;
+  position: relative;
+  font-size: 72px;
+  width: 100%;
+  top: 37%;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 2px 4px #4D4D4D;
+}
+header .header-container .header-text .title:focus {
+  outline: 0;
+}
+header .header-container .header-text p {
+  font-size: 24px;
+  text-align: center;
+  top: 40%;
+  position: relative;
+  width: 100%;
+  font-weight: 100;
+  text-shadow: 0 2px 4px #4D4D4D;
+}
+header .header-container button {
+  border: none;
+  background: none;
+  width: 150px;
+  height: 35px;
+  padding: 0;
+  position: relative;
+  margin-top: 160px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  font: 14px Roboto, sans-serif;
+  font-weight: 700;
+  color: #CF000F;
+  cursor: pointer;
+}
+header .header-container button:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=header.css.map */

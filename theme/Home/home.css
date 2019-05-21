@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i|Roboto:100,200,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i|Roboto:100,200,300,400,700");
+@keyframes cardHover {
+  from {
+    color: #757575;
+  }
+  to {
+    box-shadow: -1px 4px 8px #656565;
+    color: #000000;
+  }
+}
+@keyframes dance {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-text h1 {
+    font-size: 3em !important;
+  }
+
+  .home-about-text {
+    font-size: 18px;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 400px) {
+  .home-text h1 {
+    font-size: 5em !important;
+  }
+
+  .home-about-text {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home-text h1 {
+    font-size: 10em !important;
+  }
+
+  .home-about-text {
+    font-size: 28px;
+  }
+}
+.scale {
+  transform: scale(1.5);
+}
+
+.row-container {
+  width: 60%;
+  margin: 12% auto;
+  color: #757575;
+}
+.row-container .speed-image-container {
+  position: relative;
+}
+.row-container .speed-image-container .timelapse-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  color: #CF000F;
+}
+.row-container .label {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+.row-container .description {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+.row-container .hybrid-text {
+  text-align: right;
+}
+.row-container .allDevices-text {
+  text-align: center;
+}
+.row-container .allDevices-img {
+  margin-top: 7%;
+  margin-left: 8%;
+}
+
+section.home .home-about-text {
+  width: 70%;
+  margin: 4% auto;
+  color: #6C7A89;
+  font-weight: 100;
+  text-align: center;
+}
+section.home .home-about-text .contact-info {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+section.home .home-about-text .contact-info .email-icon {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  position: relative;
+  cursor: pointer;
+}
+section.home .home-about-text .contact-info .email-icon i {
+  font-size: 75px;
+  color: #000000;
+}
+section.home .home-about-text .contact-info .email-icon span {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  font-weight: 300;
+  transition: opacity 1s;
+}
+section.home .home-about-text .contact-info .email-icon span a {
+  color: #000000;
+}
+section.home .home-about-text .contact-info .email-icon:hover span {
+  opacity: 1;
+  visibility: visible;
+  top: 75px;
+}
+section.home .home-about-text .contact-info .github-icon .github-img {
+  width: 75px;
+}
+section.home .home-text {
+  position: relative;
+}
+section.home .home-text h1 {
+  position: relative;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-weight: 300;
+  text-shadow: 0px 2px 2px #555;
+  color: #19B5FE;
+}
+section.home .home-text h1 .dancing-r {
+  position: absolute;
+  transform: skew(0deg);
+  left: 48px;
+  animation: dance 1s;
+}
+section.home .home-text h2 {
+  text-align: center;
+  font-weight: 100;
+  color: #6C7A89;
+  font-size: 18px;
+  margin: 15px auto;
+  border-bottom: 1px solid #BDC3C7;
+  width: 70%;
+  padding-bottom: 4%;
+}
+
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,79 @@
+@import '../../assets/styles/partials/grid';
+@import '../../assets/styles/partials/mixins';
+@import '../../assets/styles/partials/variables';
+
+@media screen and (max-width: 720px) {
+  .post-header-container {
+    flex-direction: column;
+  }
+
+  .post-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .post-info {
+    font-size: 12px;
+    p {
+      font-size: 12px !important;
+    }
+    .flex-row {
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .post-title {
+    font-size: 40px;
+    text-align: left;
+  }
+}
+
+.post-detail-container {
+  width: 80%;
+  margin: auto;
+    .post-body {
+      white-space: pre-line;
+      padding: 25px;
+
+    .post-header-container {
+      margin-bottom: 3%;
+      position: relative;
+      .post-title {
+        color: $night-black;
+        font-weight: 300;
+      }
+      .post-info {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        text-align: right;
+        color: $grey;
+        justify-content: flex-end;
+        span {
+          font-weight: 500;
+          margin-right: 10px;
+          align-self: center;
+        }
+        p {
+          font-weight: 100;
+        }
+      }
+    }
+    mat-card {
+      p {
+        color: $grey;
+      }
+    }
+  }
+
+  .post-detail-comments {
+    margin-top: 25px;
+    text-align: center;
+    > div:nth-child(1) {
+      padding: 25px;
+    }
+  }
+}
